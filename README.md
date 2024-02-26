@@ -12,5 +12,4 @@ Put this stuff onto your computer and pull up IntelliJ IDEA or whatever, have fu
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+I am doing all the contributing don't worry.
