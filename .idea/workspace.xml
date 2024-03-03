@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Software.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Subscriptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/utils/MenuGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/utils/ReadWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Test.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,30 +39,53 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2ctzDHtV8XLEWiyJ4Oxc3WijoT7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lukas/IdeaProjects/KRL_k1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\java\coursework\kursiniswebshop" />
+      <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\resources\coursework\kursiniswebshop" />
+      <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\java\coursework\kursiniswebshop\model" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,11 +94,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708945546198</updated>
-      <workItem from="1708945547587" duration="312000" />
+      <workItem from="1708945547587" duration="706000" />
+      <workItem from="1708946268652" duration="115000" />
+      <workItem from="1708946497803" duration="34000" />
+      <workItem from="1708946566660" duration="935000" />
+      <workItem from="1708958127989" duration="2164000" />
+      <workItem from="1709047918142" duration="5715000" />
+      <workItem from="1709218771477" duration="642000" />
+      <workItem from="1709373139753" duration="595000" />
+      <workItem from="1709402728495" duration="698000" />
+      <workItem from="1709462539949" duration="1758000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
