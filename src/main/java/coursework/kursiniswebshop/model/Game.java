@@ -2,21 +2,13 @@ package coursework.kursiniswebshop.model;
 
 import java.time.LocalDate;
 
-import lombok.AllArgsConstructor;
 import lombok.Setter;
 import lombok.Getter;
 @Getter
 @Setter
-@AllArgsConstructor
 
-public class Game extends Product{
-    private String title;
-    private String description;
-    private String genre;
-    private String developer;
-    private String version;
-    private LocalDate releaseDate;
-
-
-
+public final class Game extends Product{
+    public Game(String title, String description, String genrecateg, String developer, String version, LocalDate releaseDate) {
+        super(title,description,genrecateg,developer,version,releaseDate);
+    }
 }

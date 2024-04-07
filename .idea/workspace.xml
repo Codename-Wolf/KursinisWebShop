@@ -4,29 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/LoginWindowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/utils/Popup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/utils/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/login-window.fxml" afterDir="false" />
+    <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Software.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Software.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Subscriptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Subscriptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,33 +50,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/lukas/IdeaProjects/KursinisWebShop/src/main/java/coursework/kursiniswebshop",
-    "last_opened_file_path": "C:/Users/lukas/Desktop/Uni/2 Kursas/Dirbtinis intelektas/Lab2/drools8/examples/sources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4262136",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/lukas/IdeaProjects/KursinisWebShop/src/main/java/coursework/kursiniswebshop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lukas/Desktop/Uni/2 Kursas/Dirbtinis intelektas/Lab2/drools8/examples/sources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4262136&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\java\coursework\kursiniswebshop" />
@@ -164,8 +149,18 @@
       <workItem from="1712174232218" duration="316000" />
       <workItem from="1712318266070" duration="5295000" />
       <workItem from="1712427102281" duration="1257000" />
-      <workItem from="1712495357740" duration="4075000" />
+      <workItem from="1712495357740" duration="4555000" />
+      <workItem from="1712505824807" duration="6348000" />
     </task>
+    <task id="LOCAL-00001" summary="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working.">
+      <option name="closed" value="true" />
+      <created>1712499548427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712499548427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +176,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -7,13 +7,9 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
-@AllArgsConstructor
 
-public class Software extends Product{
-    private String title;
-    private String description;
-    private String category;
-    private String developer;
-    private String version;
-    private LocalDate releaseDate;
+public class Software extends Product {
+    public Software(String title, String description, String genrecateg, String developer, String version, LocalDate releaseDate) {
+        super(title,description,genrecateg,developer,version,releaseDate);
+    }
 }

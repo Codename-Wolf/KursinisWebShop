@@ -23,7 +23,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="237.0">
                      <children>
-                        <ListView fx:id="productAdminList" layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="215.0" />
+                        <ListView fx:id="productAdminList" layoutX="14.0" layoutY="14.0" onMouseClicked="#readProduct" prefHeight="335.0" prefWidth="215.0" />
                         <RadioButton fx:id="gameRadioButton" layoutX="241.0" layoutY="14.0" mnemonicParsing="false" text="Game">
                            <toggleGroup>
                               <ToggleGroup fx:id="productTypeRadioButton" />
@@ -39,8 +39,8 @@
                         <TextField fx:id="durationField" layoutX="398.0" layoutY="82.0" promptText="Duration (Subscription)" />
                         <DatePicker fx:id="releaseDateField" layoutX="398.0" layoutY="46.0" promptText="Release date (Game)" />
                         <Button fx:id="addButton" layoutX="399.0" layoutY="124.0" mnemonicParsing="false" onAction="#addProductOnClick" text="Add" />
-                        <Button fx:id="updateButton" layoutX="445.0" layoutY="124.0" mnemonicParsing="false" text="Update" />
-                        <Button fx:id="removeButton" layoutX="513.0" layoutY="124.0" mnemonicParsing="false" text="Remove" />
+                        <Button fx:id="updateButton" layoutX="445.0" layoutY="124.0" mnemonicParsing="false" onAction="#updateProduct" text="Update" />
+                        <Button fx:id="removeButton" layoutX="513.0" layoutY="124.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove" />
                      </children></AnchorPane>
                </content>
             </Tab>
