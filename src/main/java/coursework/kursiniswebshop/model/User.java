@@ -1,7 +1,10 @@
 package coursework.kursiniswebshop.model;
 
 import java.time.LocalDate;
-
+import lombok.Setter;
+import lombok.Getter;
+@Getter
+@Setter
 public abstract class User {
     //Man reikes veliau, kai dirbsiu su db
     protected int id;

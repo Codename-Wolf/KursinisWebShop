@@ -1,5 +1,9 @@
 package coursework.kursiniswebshop.model;
 
+import lombok.Setter;
+import lombok.Getter;
+@Getter
+@Setter
 public final class Manager extends User {
     private boolean isAdmin;
 
