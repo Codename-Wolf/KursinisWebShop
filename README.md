@@ -1,5 +1,5 @@
 # ProgrammingTechCoursework
-University assignment for Programming Technologies.
+University coursework for Programming Technologies.
 
 ## Requirements
 
