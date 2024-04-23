@@ -2,10 +2,17 @@ package coursework.kursiniswebshop.model;
 
 
 import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.Getter;
 @Getter
 @Setter
+//@Entity
+//@NoArgsConstructor
+//@AllArgsConstructor
 
 public class Customer extends User{
     private String cardNo;
@@ -19,10 +26,5 @@ public class Customer extends User{
         this.deliveryAddress = deliveryAddress;
         this.billingAddress = billingAddress;
         this.birthDate = birthDate;
-    }
-
-    @Override
-    public void greet2() {
-
     }
 }

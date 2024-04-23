@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working.">
+    <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff.">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Software.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Software.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Subscriptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Subscriptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +63,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainApplication.executor&quot;: &quot;Run&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -64,7 +75,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/lukas/IdeaProjects/KursinisWebShop/src/main/java/coursework/kursiniswebshop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lukas/Desktop/Uni/2 Kursas/Dirbtinis intelektas/Lab2/drools8/examples/sources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lukas/IdeaProjects/KontrolinioTemplate-master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,8 +84,13 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.4262136&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -88,8 +104,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coursework.kursiniswebshop.HelloApplication" />
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coursework.kursiniswebshop.MainApplication" />
       <module name="KursinisWebShop" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.MainApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +166,24 @@
       <workItem from="1712318266070" duration="5295000" />
       <workItem from="1712427102281" duration="1257000" />
       <workItem from="1712495357740" duration="4555000" />
-      <workItem from="1712505824807" duration="6348000" />
+      <workItem from="1712505824807" duration="11877000" />
+      <workItem from="1712561286170" duration="39000" />
+      <workItem from="1712578123356" duration="1455000" />
+      <workItem from="1712582065772" duration="1899000" />
+      <workItem from="1712587475596" duration="1464000" />
+      <workItem from="1712681650870" duration="609000" />
+      <workItem from="1713083077350" duration="1186000" />
+      <workItem from="1713167207459" duration="1778000" />
+      <workItem from="1713554806978" duration="686000" />
+      <workItem from="1713555906416" duration="129000" />
+      <workItem from="1713635702140" duration="2763000" />
+      <workItem from="1713697605680" duration="749000" />
+      <workItem from="1713718379907" duration="2421000" />
+      <workItem from="1713772198335" duration="3858000" />
+      <workItem from="1713776077882" duration="1801000" />
+      <workItem from="1713778017890" duration="67000" />
+      <workItem from="1713779733701" duration="9126000" />
+      <workItem from="1713892682747" duration="1907000" />
     </task>
     <task id="LOCAL-00001" summary="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working.">
       <option name="closed" value="true" />
@@ -160,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712499548427</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff.">
+      <option name="closed" value="true" />
+      <created>1712517511918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712517511918</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +220,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working." />
+    <MESSAGE value="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff." />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="org.hibernate.HibernateException" package="org.hibernate" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

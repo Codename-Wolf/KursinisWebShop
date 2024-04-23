@@ -6,55 +6,76 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coursework.kursiniswebshop.fxControllers.MainController">
-   <children>
-      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab fx:id="shopTab" text="Shop">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </Tab>
-            <Tab fx:id="productsTab" text="Products">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="237.0">
+<AnchorPane prefHeight="507.0" prefWidth="877.0" stylesheets="@bootstrap2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coursework.kursiniswebshop.fxControllers.MainController">
+    <children>
+        <TabPane prefHeight="507.0" prefWidth="877.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="shopTab" text="Shop">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="459.0" prefWidth="873.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="productsTab" text="Products">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="787.0">
+                            <children>
+                                <ListView fx:id="productAdminList" layoutX="14.0" layoutY="14.0" onMouseClicked="#readProduct" prefHeight="335.0" prefWidth="215.0" />
+                                <RadioButton fx:id="gameRadioButton" layoutX="241.0" layoutY="14.0" mnemonicParsing="false" text="Game">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="productTypeRadioButton" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="softwareRadioButton" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Software" toggleGroup="$productTypeRadioButton" />
+                                <RadioButton fx:id="subRadioButton" layoutX="374.0" layoutY="14.0" mnemonicParsing="false" text="Subscription" toggleGroup="$productTypeRadioButton" />
+                                <TextField fx:id="titleField" layoutX="236.0" layoutY="43.0" prefWidth="260.0" promptText="Title" />
+                                <TextField fx:id="descriptionField" layoutX="236.0" layoutY="82.0" prefHeight="80.0" prefWidth="260.0" promptText="Description" />
+                                <TextField fx:id="genrecategField" layoutX="236.0" layoutY="120.0" prefWidth="260.0" promptText="Genre/Category" />
+                                <TextField fx:id="devField" layoutX="236.0" layoutY="159.0" prefWidth="260.0" promptText="Developer" />
+                                <TextField fx:id="versionField" layoutX="236.0" layoutY="196.0" prefWidth="260.0" promptText="Version" />
+                                <TextField fx:id="durationField" layoutX="236.0" layoutY="234.0" prefWidth="260.0" promptText="Duration (Subscription)" />
+                                <DatePicker fx:id="releaseDateField" layoutX="236.0" layoutY="274.0" prefWidth="260.0" promptText="Release date (Game)" />
+                                <Button fx:id="addButton" layoutX="236.0" layoutY="317.0" mnemonicParsing="false" onAction="#addProductOnClick" text="Add" />
+                                <Button fx:id="removeButton" layoutX="366.0" layoutY="317.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove" />
+                                <Button fx:id="updateButton" layoutX="292.0" layoutY="317.0" mnemonicParsing="false" onAction="#updateProduct" text="Update" />
+                        <ImageView fx:id="frontCover" fitHeight="216.0" fitWidth="276.0" layoutX="554.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="refreshButton" layoutX="88.0" layoutY="364.0" mnemonicParsing="false" onAction="#refreshProduct" text="Refresh" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="usersTab" text="Users">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="293.0">
                      <children>
-                        <ListView fx:id="productAdminList" layoutX="14.0" layoutY="14.0" onMouseClicked="#readProduct" prefHeight="335.0" prefWidth="215.0" />
-                        <RadioButton fx:id="gameRadioButton" layoutX="241.0" layoutY="14.0" mnemonicParsing="false" text="Game">
-                           <toggleGroup>
-                              <ToggleGroup fx:id="productTypeRadioButton" />
-                           </toggleGroup>
-                        </RadioButton>
-                        <RadioButton fx:id="softwareRadioButton" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Software" toggleGroup="$productTypeRadioButton" />
-                        <RadioButton fx:id="subRadioButton" layoutX="374.0" layoutY="14.0" mnemonicParsing="false" text="Subscription" toggleGroup="$productTypeRadioButton" />
-                        <TextField fx:id="titleField" layoutX="241.0" layoutY="46.0" promptText="Title" />
-                        <TextField fx:id="descriptionField" alignment="TOP_LEFT" layoutX="241.0" layoutY="82.0" prefHeight="157.0" prefWidth="149.0" promptText="Description" />
-                        <TextField fx:id="genrecategField" layoutX="241.0" layoutY="251.0" promptText="Genre/Category" />
-                        <TextField fx:id="devField" layoutX="241.0" layoutY="283.0" promptText="Developer" />
-                        <TextField fx:id="versionField" layoutX="241.0" layoutY="316.0" promptText="Version" />
-                        <TextField fx:id="durationField" layoutX="398.0" layoutY="82.0" promptText="Duration (Subscription)" />
-                        <DatePicker fx:id="releaseDateField" layoutX="398.0" layoutY="46.0" promptText="Release date (Game)" />
-                        <Button fx:id="addButton" layoutX="399.0" layoutY="124.0" mnemonicParsing="false" onAction="#addProductOnClick" text="Add" />
-                        <Button fx:id="updateButton" layoutX="445.0" layoutY="124.0" mnemonicParsing="false" onAction="#updateProduct" text="Update" />
-                        <Button fx:id="removeButton" layoutX="513.0" layoutY="124.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove" />
+                        <TableView layoutX="12.0" layoutY="14.0" prefHeight="437.0" prefWidth="853.0">
+                          <columns>
+                            <TableColumn prefWidth="58.00000286102295" text="C1" />
+                            <TableColumn prefWidth="120.66670989990234" text="C2" />
+                              <TableColumn prefWidth="106.00001525878906" text="C2" />
+                              <TableColumn prefWidth="76.6666259765625" text="C2" />
+                              <TableColumn prefWidth="118.0" text="C2" />
+                              <TableColumn minWidth="6.0" prefWidth="107.99996948242188" text="C2" />
+                              <TableColumn prefWidth="128.66668701171875" text="C2" />
+                              <TableColumn prefWidth="50.00006103515625" text="C2" />
+                              <TableColumn prefWidth="82.6666259765625" text="C2" />
+                          </columns>
+                        </TableView>
                      </children></AnchorPane>
-               </content>
-            </Tab>
-          <Tab fx:id="usersTab" text="Users">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="293.0" />
-            </content>
-          </Tab>
-            <Tab fx:id="ordersTab" text="Orders">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="293.0" />
-               </content>
-            </Tab>
-        </tabs>
-      </TabPane>
-   </children>
+                    </content>
+                </Tab>
+                <Tab fx:id="ordersTab" text="Orders">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="293.0" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
 </AnchorPane>

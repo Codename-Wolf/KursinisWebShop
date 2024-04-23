@@ -1,9 +1,16 @@
 package coursework.kursiniswebshop.model;
 
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.Getter;
 @Getter
 @Setter
+//@Entity
+//@NoArgsConstructor
+//@AllArgsConstructor
+
 public final class Manager extends User {
     private boolean isAdmin;
 
@@ -19,15 +26,5 @@ public final class Manager extends User {
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 '}';
-    }
-
-    @Override
-    public void greet2() {
-
-    }
-
-    @Override
-    public void greet() {
-        System.out.println("Hi manager " + login);
     }
 }

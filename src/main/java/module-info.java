@@ -11,6 +11,8 @@ module coursework.kursiniswebshop {
 
     opens coursework.kursiniswebshop to javafx.fxml;
     exports coursework.kursiniswebshop;
-    exports coursework.kursiniswebshop.fxControllers;
     opens coursework.kursiniswebshop.fxControllers to javafx.fxml;
+    exports coursework.kursiniswebshop.fxControllers;
+    opens coursework.kursiniswebshop.model to javafx.fxml, org.hibernate.orm.core, jakarta.persistence;
+    exports coursework.kursiniswebshop.model to javafx.fxml, org.hibernate.orm.core, jakarta.persistence;
 }
