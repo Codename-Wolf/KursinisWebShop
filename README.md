@@ -3,9 +3,7 @@ University assignment for Programming Technologies.
 
 ## Requirements
 
-During the entire semester, it is suggested to work on a given topic, but you can change it (however, the complexity must not be less and the topic must be suitable for the all laboratory works of the course. If you want another topic or technology for the course work, you must contact me personally).
-
-You will create a shop with different types of users connecting to it. Customers can register themselves, employees are registered by administrators. You can view products, buy them, cancel an order, assign responsible managers, confirm an order, manage products, users, etc. You can leave comments on products and orders, comments on products are of unlimited depth, you can leave a rating. Goods are stored in warehouses/stores, there may be several of them. The main requirements for the implementation of the system are:
+Create a shop with different types of users connecting to it. Customers can register themselves, employees are registered by administrators. You can view products, buy them, cancel an order, assign responsible managers, confirm an order, manage products, users, etc. You can leave comments on products and orders, comments on products are of unlimited depth, you can leave a rating. Goods are stored in warehouses/stores, there may be several of them. The main requirements for the implementation of the system are:
 
     * The system has users who connect with their credentials and access only the data intended for them (For example, customers cannot see system users, but they can see their orders and goods. Managers can see all users, but cannot change them, only their data; employees of different levels and can see and perform different functions, etc.); [1]
     * There are at least 2 types of users - customers and store employees/managers (name, surname, contact information, date of birth, etc. must be saved). Both customers and managers have characteristics common to both, but also differ in some ways. When connecting with a login and password, the password must be hashed in the database; [0.5]
