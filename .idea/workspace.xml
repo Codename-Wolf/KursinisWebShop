@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="XAMPP, Adding DB functionality&#10;&#10;CR parts of CRUD done, U and D remain to be completed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Software.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Software.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Subscriptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Subscriptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +169,12 @@
       <workItem from="1713776077882" duration="1801000" />
       <workItem from="1713778017890" duration="67000" />
       <workItem from="1713779733701" duration="9126000" />
-      <workItem from="1713892682747" duration="1907000" />
+      <workItem from="1713892682747" duration="3818000" />
+      <workItem from="1713978615092" duration="504000" />
+      <workItem from="1714124773890" duration="965000" />
+      <workItem from="1714152295265" duration="2861000" />
+      <workItem from="1714236300602" duration="7334000" />
+      <workItem from="1714307223636" duration="5298000" />
     </task>
     <task id="LOCAL-00001" summary="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working.">
       <option name="closed" value="true" />
@@ -201,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712517511918</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="XAMPP, Adding DB functionality&#10;&#10;CR parts of CRUD done, U and D remain to be completed.">
+      <option name="closed" value="true" />
+      <created>1713894794909</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713894794910</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +220,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working." />
     <MESSAGE value="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff." />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff." />
+    <MESSAGE value="XAMPP, Adding DB functionality&#10;&#10;CR parts of CRUD done, U and D remain to be completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="XAMPP, Adding DB functionality&#10;&#10;CR parts of CRUD done, U and D remain to be completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

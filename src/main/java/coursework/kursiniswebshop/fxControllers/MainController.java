@@ -9,6 +9,7 @@ import coursework.kursiniswebshop.utils.Validation;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,7 +17,9 @@ import javafx.scene.control.*;
 import coursework.kursiniswebshop.hibernate.GenericHibernate;
 
 import java.net.URL;
+import java.sql.Array;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -50,6 +53,8 @@ public class MainController implements Initializable {
     public RadioButton softwareRadioButton;
     @FXML
     public RadioButton subRadioButton;
+    @FXML
+    public TextField searchField;
 
     //This class has methods for entity manipulation
     private  GenericHibernate genericHibernate;
@@ -89,7 +94,7 @@ public class MainController implements Initializable {
                 genericHibernate.create(software);
             } else if (subRadioButton.isSelected()) {
                 Subscriptions subscriptions = new Subscriptions(
-                       titleField.getText(),
+                        titleField.getText(),
                         descriptionField.getText(),
                         genrecategField.getText(),
                         devField.getText(),
@@ -110,8 +115,7 @@ public class MainController implements Initializable {
 //            Popup.show("Field" + e.getMessage(), Popup.PopupType.WARNING);
             e.printStackTrace();
         }
-            productAdminList.getItems().clear();
-            productAdminList.getItems().addAll(genericHibernate.getAllRecords(Product.class));
+        refreshProduct();
     }
     //</editor-fold>
 
@@ -121,46 +125,37 @@ public class MainController implements Initializable {
             try {
                 Product product = productAdminList.getSelectionModel().getSelectedItem();
                 if (product instanceof Game) {
-                    Game gameToUpdate = genericHibernate.getEntityById(Game.class, product.getID());
-                    gameToUpdate.setTitle(titleField.getText());
-                    gameToUpdate.setDescription(descriptionField.getText());
-                    gameToUpdate.setDeveloper(devField.getText());
-                    gameToUpdate.setGenrecateg(genrecategField.getText());
-                    gameToUpdate.setVersion(versionField.getText());
-                    gameToUpdate.setReleaseDate(releaseDateField.getValue());
-
-                    genericHibernate.update(gameToUpdate);
-                    //productAdminList.getItems().add(game); //Kol kas tiesiog atvaizduoju sukurtą objektą ListView elemente
+                    updateProductWithType(product, Game.class);
                 } else if (product instanceof Software) {
-                    Software softwareToUpdate = genericHibernate.getEntityById(Software.class, product.getID());
-                    softwareToUpdate.setTitle(titleField.getText());
-                    softwareToUpdate.setDescription(descriptionField.getText());
-                    softwareToUpdate.setGenrecateg(genrecategField.getText());
-                    softwareToUpdate.setDeveloper(devField.getText());
-                    softwareToUpdate.setVersion(versionField.getText());
-                    softwareToUpdate.setReleaseDate(releaseDateField.getValue());
-                    //productAdminList.getItems().add(software);
-                    genericHibernate.update(softwareToUpdate);
+                    updateProductWithType(product, Software.class);
                 } else if (product instanceof Subscriptions) {
-                    Subscriptions subscriptionsToUpdate = genericHibernate.getEntityById(Subscriptions.class, product.getID());
-                    subscriptionsToUpdate.setTitle(titleField.getText());
-                    subscriptionsToUpdate.setDescription(descriptionField.getText());
-                    subscriptionsToUpdate.setGenrecateg(genrecategField.getText());
-                    subscriptionsToUpdate.setDeveloper(devField.getText());
-                    subscriptionsToUpdate.setVersion(versionField.getText());
-                    subscriptionsToUpdate.setReleaseDate(releaseDateField.getValue());
-                    subscriptionsToUpdate.setDuration(durationField.getText());
-                    genericHibernate.update(subscriptionsToUpdate);
-                    //productAdminList.getItems().add(subscriptions);
+                    updateProductWithType(product, Subscriptions.class);
                 }
+                refreshProduct();
             } catch (Exception e) {
-            //  Popup.show("Field" + e.getMessage(), Popup.PopupType.WARNING);
                 e.printStackTrace();
+                // Popup.show("Field" + e.getMessage(), Popup.PopupType.WARNING);
             }
-        }
-        else {
+        } else {
             Popup.show("Please select a product first.", Popup.PopupType.WARNING);
         }
+    }
+
+    private <T extends Product> void updateProductWithType(Product product, Class<T> newType) {
+        T productToUpdate = genericHibernate.getEntityById(newType, product.getID());
+        productToUpdate.setTitle(titleField.getText());
+        productToUpdate.setDescription(descriptionField.getText());
+        productToUpdate.setGenrecateg(genrecategField.getText());
+        productToUpdate.setDeveloper(devField.getText());
+        productToUpdate.setVersion(versionField.getText());
+        productToUpdate.setReleaseDate(releaseDateField.getValue());
+
+        if (product instanceof Subscriptions && newType.equals(Subscriptions.class)) {
+            Subscriptions subscriptionsToUpdate = (Subscriptions) productToUpdate;
+            subscriptionsToUpdate.setDuration(durationField.getText());
+        }
+
+        genericHibernate.update(productToUpdate);
     }
     //</editor-fold>
 
@@ -203,18 +198,42 @@ public class MainController implements Initializable {
 
     //<editor-fold desc="Function: removeProduct">
     public void removeProduct() {
-        Product product = productAdminList.getSelectionModel().getSelectedItem();
-        productAdminList.getItems().remove(product);
+        genericHibernate.delete(Product.class, productAdminList.getSelectionModel().getSelectedItem().getID());
+        refreshProduct();
     }
     //</editor-fold>
 
     public MainController () {
-           this.genericHibernate = new GenericHibernate(Persistence.createEntityManagerFactory("Shop"));;
+        this.genericHibernate = new GenericHibernate(Persistence.createEntityManagerFactory("Shop"));;
     }
 
 
     public void refreshProduct() {
         productAdminList.getItems().clear();
-        productAdminList.getItems().addAll(genericHibernate.getAllRecords(Product.class));
+
+        if(searchField.getText().isEmpty()) {
+            productAdminList.getItems().addAll(genericHibernate.getAllRecords(Product.class));
+        }
+        else {
+            ArrayList <Product> products = (ArrayList<Product>) genericHibernate.getAllRecords(Product.class);
+            ArrayList <Product> searchProducts = new ArrayList<>();
+            for (Product product: products) {
+                if (product.getTitle().toLowerCase().contains(searchField.getText().toLowerCase())) {
+                    searchProducts.add(product);
+                }
+            }
+            productAdminList.getItems().addAll(searchProducts);
+        }
+    }
+
+    public void clearProductFields() {
+        titleField.clear();
+        descriptionField.clear();
+        genrecategField.clear();
+        devField.clear();
+        devField.clear();
+        versionField.clear();
+        durationField.clear();
+        releaseDateField.setValue(null);
     }
 }

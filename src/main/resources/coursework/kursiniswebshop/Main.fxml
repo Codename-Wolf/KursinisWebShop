@@ -26,7 +26,7 @@
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="787.0">
                             <children>
-                                <ListView fx:id="productAdminList" layoutX="14.0" layoutY="14.0" onMouseClicked="#readProduct" prefHeight="335.0" prefWidth="215.0" />
+                                <ListView fx:id="productAdminList" layoutX="14.0" layoutY="14.0" onMouseClicked="#readProduct" prefHeight="333.0" prefWidth="215.0" />
                                 <RadioButton fx:id="gameRadioButton" layoutX="241.0" layoutY="14.0" mnemonicParsing="false" text="Game">
                                     <toggleGroup>
                                         <ToggleGroup fx:id="productTypeRadioButton" />
@@ -40,12 +40,14 @@
                                 <TextField fx:id="devField" layoutX="236.0" layoutY="159.0" prefWidth="260.0" promptText="Developer" />
                                 <TextField fx:id="versionField" layoutX="236.0" layoutY="196.0" prefWidth="260.0" promptText="Version" />
                                 <TextField fx:id="durationField" layoutX="236.0" layoutY="234.0" prefWidth="260.0" promptText="Duration (Subscription)" />
-                                <DatePicker fx:id="releaseDateField" layoutX="236.0" layoutY="274.0" prefWidth="260.0" promptText="Release date (Game)" />
+                                <DatePicker fx:id="releaseDateField" layoutX="236.0" layoutY="274.0" prefWidth="260.0" promptText="Release date" />
                                 <Button fx:id="addButton" layoutX="236.0" layoutY="317.0" mnemonicParsing="false" onAction="#addProductOnClick" text="Add" />
                                 <Button fx:id="removeButton" layoutX="366.0" layoutY="317.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove" />
                                 <Button fx:id="updateButton" layoutX="292.0" layoutY="317.0" mnemonicParsing="false" onAction="#updateProduct" text="Update" />
-                        <ImageView fx:id="frontCover" fitHeight="216.0" fitWidth="276.0" layoutX="554.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
-                        <Button fx:id="refreshButton" layoutX="88.0" layoutY="364.0" mnemonicParsing="false" onAction="#refreshProduct" text="Refresh" />
+                        <ImageView fx:id="frontCover" fitHeight="226.0" fitWidth="276.0" layoutX="554.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="refreshButton" layoutX="236.0" layoutY="356.0" mnemonicParsing="false" onAction="#refreshProduct" prefHeight="32.0" prefWidth="259.0" text="Refresh" />
+                        <Button fx:id="clearButton" layoutX="444.0" layoutY="317.0" mnemonicParsing="false" onAction="#clearProductFields" text="Clear" />
+                        <TextField fx:id="searchField" layoutX="14.0" layoutY="357.0" onKeyPressed="#refreshProduct" prefWidth="216.0" promptText="Search" />
                             </children>
                         </AnchorPane>
                     </content>
