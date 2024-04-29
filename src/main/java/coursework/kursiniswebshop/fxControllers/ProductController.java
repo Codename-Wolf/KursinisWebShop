@@ -5,24 +5,18 @@ import coursework.kursiniswebshop.model.Product;
 import coursework.kursiniswebshop.model.Software;
 import coursework.kursiniswebshop.model.Subscriptions;
 import coursework.kursiniswebshop.utils.Popup;
-import coursework.kursiniswebshop.utils.Validation;
-import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import coursework.kursiniswebshop.hibernate.GenericHibernate;
 
 import java.net.URL;
-import java.sql.Array;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class MainController implements Initializable {
+public class ProductController implements Initializable {
     @FXML
     public Tab shopTab;
     @FXML
@@ -61,13 +55,12 @@ public class MainController implements Initializable {
 
     private EntityManagerFactory entityManagerFactory;
 
-    //<editor-fold desc="Function: addProductOnClick">
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         entityManagerFactory = Persistence.createEntityManagerFactory("Shop");
     }
 
+    //<editor-fold desc="Function: addProductOnClick">
     @FXML
     public void addProductOnClick() {
         try {
@@ -203,7 +196,7 @@ public class MainController implements Initializable {
     }
     //</editor-fold>
 
-    public MainController () {
+    public ProductController() {
         this.genericHibernate = new GenericHibernate(Persistence.createEntityManagerFactory("Shop"));;
     }
 
