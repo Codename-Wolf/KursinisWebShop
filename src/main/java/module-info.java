@@ -1,4 +1,4 @@
-module coursework.kursiniswebshop {
+module com.kursinis.kursinis {
     requires javafx.controls;
     requires javafx.fxml;
     requires lombok;
@@ -9,10 +9,10 @@ module coursework.kursiniswebshop {
     requires jakarta.persistence;
     requires org.kordamp.bootstrapfx.core;
 
-    opens coursework.kursiniswebshop to javafx.fxml;
-    exports coursework.kursiniswebshop;
-    opens coursework.kursiniswebshop.fxControllers to javafx.fxml;
-    exports coursework.kursiniswebshop.fxControllers;
-    opens coursework.kursiniswebshop.model to javafx.fxml, org.hibernate.orm.core, jakarta.persistence;
-    exports coursework.kursiniswebshop.model to javafx.fxml, org.hibernate.orm.core, jakarta.persistence;
+    opens com.kursinis.kursinis to javafx.fxml;
+    exports com.kursinis.kursinis;
+    opens com.kursinis.kursinis.fxControllers to javafx.fxml;
+    exports com.kursinis.kursinis.fxControllers;
+    opens com.kursinis.kursinis.model to javafx.base, org.hibernate.orm.core, jakarta.persistence, java.base;
+    exports com.kursinis.kursinis.model to javafx.fxml, org.hibernate.orm.core, jakarta.persistence, java.base;
 }

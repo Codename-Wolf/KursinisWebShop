@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="481.0" prefWidth="824.0" stylesheets="@bootstrap2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kursinis.kursinis.fxControllers.MainController">
+    <children>
+        <TabPane fx:id="tabs" layoutY="-2.0" prefHeight="481.0" prefWidth="825.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="shopTab" text="Shop">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="459.0" prefWidth="873.0">
+                     <children>
+                        <Button fx:id="logout" layoutX="750.0" layoutY="404.0" mnemonicParsing="false" onAction="#logoutAction" text="Log out" />
+                        <TextField fx:id="shopSearch" layoutX="14.0" layoutY="358.0" onKeyPressed="#refreshShopProduct" prefWidth="216.0" promptText="Search" />
+                        <ListView fx:id="shopProductList" layoutX="14.0" layoutY="14.0" onMouseClicked="#readShopProduct" prefHeight="333.0" prefWidth="215.0" />
+                        <Button fx:id="shopAddCart" layoutX="373.0" layoutY="398.0" mnemonicParsing="false" onAction="#addProductToCart" prefHeight="32.0" prefWidth="118.0" text="Add to cart" />
+                        <Button fx:id="shopViewComments" layoutX="243.0" layoutY="398.0" mnemonicParsing="false" onAction="#openCommentsWindow" text="View comments" />
+                        <GridPane layoutX="243.0" layoutY="14.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text fx:id="titleShopText" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="descriptionShopText" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="genrecategShopText" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre/Category:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="developerShopText" strokeType="OUTSIDE" strokeWidth="0.0" text="Developer:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="releaseDateShopText" strokeType="OUTSIDE" strokeWidth="0.0" text="Release date:" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="durationShopText" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration (subscription):" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="priceShopText" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </GridPane>
+                        <Button fx:id="refreshShopButton" layoutX="14.0" layoutY="398.0" mnemonicParsing="false" onAction="#refreshShopProduct" prefHeight="32.0" prefWidth="215.0" text="Refresh" />
+                        <Text layoutX="243.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter by:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <ChoiceBox fx:id="genrecategChoicebox" layoutX="317.0" layoutY="269.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="developerChoicebox" layoutX="491.0" layoutY="269.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="productTypeChoicebox" layoutX="661.0" layoutY="269.0" prefWidth="150.0" />
+                        <Button fx:id="filterButton" layoutX="243.0" layoutY="268.0" mnemonicParsing="false" onAction="#filter" prefHeight="32.0" prefWidth="60.0" text="Filter" />
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="productsTab" text="Products">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="576.0" prefWidth="1073.0">
+                            <children>
+                                <ListView fx:id="productAdminList" layoutX="14.0" layoutY="14.0" onMouseClicked="#readProduct" prefHeight="365.0" prefWidth="215.0" />
+                                <RadioButton fx:id="gameRadioButton" layoutX="241.0" layoutY="14.0" mnemonicParsing="false" text="Game">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="productTypeRadioButton" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="softwareRadioButton" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Software" toggleGroup="$productTypeRadioButton" />
+                                <RadioButton fx:id="subRadioButton" layoutX="374.0" layoutY="14.0" mnemonicParsing="false" text="Subscription" toggleGroup="$productTypeRadioButton" />
+                                <TextField fx:id="titleField" layoutX="236.0" layoutY="43.0" prefWidth="260.0" promptText="Title" />
+                                <TextField fx:id="descriptionField" layoutX="236.0" layoutY="82.0" prefHeight="80.0" prefWidth="260.0" promptText="Description" />
+                                <TextField fx:id="genrecategField" layoutX="236.0" layoutY="120.0" prefWidth="260.0" promptText="Genre/Category" />
+                                <TextField fx:id="devField" layoutX="236.0" layoutY="159.0" prefWidth="260.0" promptText="Developer" />
+                                <TextField fx:id="versionField" layoutX="236.0" layoutY="196.0" prefWidth="260.0" promptText="Version" />
+                                <TextField fx:id="durationField" layoutX="236.0" layoutY="234.0" prefWidth="260.0" promptText="Duration (Subscription)" />
+                                <DatePicker fx:id="releaseDateField" layoutX="236.0" layoutY="274.0" prefWidth="260.0" promptText="Release date" />
+                                <Button fx:id="addButton" layoutX="236.0" layoutY="349.0" mnemonicParsing="false" onAction="#addProductOnClick" text="Add" />
+                                <Button fx:id="removeButton" layoutX="366.0" layoutY="349.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove" />
+                                <Button fx:id="updateButton" layoutX="292.0" layoutY="349.0" mnemonicParsing="false" onAction="#updateProduct" text="Update" />
+                        <Button fx:id="refreshButton" layoutX="236.0" layoutY="387.0" mnemonicParsing="false" onAction="#refreshProduct" prefHeight="32.0" prefWidth="259.0" text="Refresh" />
+                        <Button fx:id="clearButton" layoutX="443.0" layoutY="349.0" mnemonicParsing="false" onAction="#clearProductFields" text="Clear" />
+                        <TextField fx:id="searchField" layoutX="14.0" layoutY="388.0" onKeyPressed="#refreshProduct" prefWidth="216.0" promptText="Search" />
+                        <TextField fx:id="priceField" layoutX="236.0" layoutY="311.0" prefWidth="260.0" promptText="Price" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="usersTab" onSelectionChanged="#loadUsers" text="Users">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="828.0">
+                     <children>
+                        <TableView fx:id="usersTableView" editable="true" layoutX="12.0" layoutY="14.0" prefHeight="413.0" prefWidth="801.0">
+                          <columns>
+                            <TableColumn fx:id="idColumn" editable="false" prefWidth="46.0" text="ID">
+                              <cellValueFactory>
+                                  <PropertyValueFactory property="id" />
+                              </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="accTypeColumn" prefWidth="88.00003051757812" text="Account Type">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="acctype" />
+                                </cellValueFactory>
+                            </TableColumn>
+                              <TableColumn fx:id="emailColumn" prefWidth="190.6666259765625" text="Email">
+                                  <cellValueFactory>
+                                      <PropertyValueFactory property="email" />
+                                  </cellValueFactory>
+                              </TableColumn>
+                              <TableColumn fx:id="loginColumn" minWidth="6.0" prefWidth="132.66668701171875" text="Login">
+                                  <cellValueFactory>
+                                      <PropertyValueFactory property="login" />
+                                  </cellValueFactory>
+                              </TableColumn>
+                              <TableColumn fx:id="nameColumn" prefWidth="118.00006103515625" text="Name">
+                                  <cellValueFactory>
+                                      <PropertyValueFactory property="name" />
+                                  </cellValueFactory>
+                              </TableColumn>
+                              <TableColumn fx:id="surnameColumn" prefWidth="154.66668701171875" text="Surname">
+                                  <cellValueFactory>
+                                      <PropertyValueFactory property="surname" />
+                                  </cellValueFactory>
+                              </TableColumn>
+                              <TableColumn fx:id="isAdminColumn" prefWidth="68.6666259765625" text="isAdmin">
+                                  <cellValueFactory>
+                                      <PropertyValueFactory property="isAdmin" />
+                                  </cellValueFactory>
+                              </TableColumn>
+                          </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem fx:id="contextUserDelete" mnemonicParsing="false" onAction="#deleteUser" text="Delete User" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="ordersTab" onSelectionChanged="#refreshCartList" text="Orders">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="293.0">
+                     <children>
+                        <ListView fx:id="cartList" layoutX="14.0" layoutY="28.0" prefHeight="180.0" prefWidth="797.0" />
+                        <ListView fx:id="orderList" layoutX="14.0" layoutY="28.0" prefHeight="162.0" prefWidth="797.0" />
+                        <Text fx:id="yourCartText" layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Cart:">
+                           <font>
+                              <Font name="Cambria Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="totalPriceText" layoutX="14.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total price:">
+                           <font>
+                              <Font name="Cambria Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="orderButton" layoutX="15.0" layoutY="237.0" mnemonicParsing="false" onAction="#order" prefHeight="65.0" prefWidth="135.0" text="Order">
+                           <font>
+                              <Font name="Candara Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

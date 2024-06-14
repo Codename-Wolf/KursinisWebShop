@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="Finished CRUD, Added search filter">
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/fxControllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coursework/kursiniswebshop/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/coursework/kursiniswebshop/Main.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="8ef427e1-6935-425e-be9b-e644de4061f2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,13 +18,6 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -42,66 +26,57 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2ctzDHtV8XLEWiyJ4Oxc3WijoT7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2foMC34rHRD5bN6zgDhcZmI0uAj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.MainApplication.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/lukas/IdeaProjects/KursinisWebShop/src/main/java/coursework/kursiniswebshop",
-    "last_opened_file_path": "C:/Users/lukas/IdeaProjects/Lab3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4262136",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/lukas/IdeaProjects/kursinis/src/main/java/com/kursinis/kursinis&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lukas/IdeaProjects/kursinis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4262136&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\java\coursework\kursiniswebshop" />
-      <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\resources\coursework\kursiniswebshop" />
-      <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\java\coursework\kursiniswebshop\model" />
+      <recent name="C:\Users\lukas\IdeaProjects\kursinis\src\main\java\com\kursinis\kursinis" />
+      <recent name="C:\Users\lukas\IdeaProjects\kursinis\src\main\resources\com\kursinis\kursinis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lukas\IdeaProjects\KursinisWebShop\src\main\resources" />
+      <recent name="C:\Users\lukas\IdeaProjects\kursinis\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kursinis.kursinis.model" />
+      <recent name="com.kursinis.kursinis" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coursework.kursiniswebshop.MainApplication" />
-      <module name="KursinisWebShop" />
+      <option name="MAIN_CLASS_NAME" value="com.kursinis.kursinis.MainApplication" />
+      <module name="kursinis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coursework.kursiniswebshop.fxControllers.*" />
+          <option name="PATTERN" value="com.kursinis.kursinis.fxControllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,136 +100,29 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e46b250f-62c7-4da1-ab86-7043d7329366" name="Changes" comment="" />
-      <created>1708945546198</created>
+      <changelist id="8ef427e1-6935-425e-be9b-e644de4061f2" name="Changes" comment="" />
+      <created>1714462847630</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708945546198</updated>
-      <workItem from="1708945547587" duration="706000" />
-      <workItem from="1708946268652" duration="115000" />
-      <workItem from="1708946497803" duration="34000" />
-      <workItem from="1708946566660" duration="935000" />
-      <workItem from="1708958127989" duration="2164000" />
-      <workItem from="1709047918142" duration="5715000" />
-      <workItem from="1709218771477" duration="642000" />
-      <workItem from="1709373139753" duration="595000" />
-      <workItem from="1709402728495" duration="698000" />
-      <workItem from="1709462539949" duration="1758000" />
-      <workItem from="1709498853191" duration="210000" />
-      <workItem from="1709548168057" duration="2396000" />
-      <workItem from="1709568472758" duration="44000" />
-      <workItem from="1710171437961" duration="3963000" />
-      <workItem from="1710186945962" duration="53000" />
-      <workItem from="1710187006471" duration="3408000" />
-      <workItem from="1710333635451" duration="164000" />
-      <workItem from="1710696645401" duration="2530000" />
-      <workItem from="1710705341604" duration="518000" />
-      <workItem from="1710705871446" duration="394000" />
-      <workItem from="1710750067938" duration="5345000" />
-      <workItem from="1711356943595" duration="2142000" />
-      <workItem from="1711359104064" duration="5242000" />
-      <workItem from="1711542989656" duration="2956000" />
-      <workItem from="1712174232218" duration="316000" />
-      <workItem from="1712318266070" duration="5295000" />
-      <workItem from="1712427102281" duration="1257000" />
-      <workItem from="1712495357740" duration="4555000" />
-      <workItem from="1712505824807" duration="11877000" />
-      <workItem from="1712561286170" duration="39000" />
-      <workItem from="1712578123356" duration="1455000" />
-      <workItem from="1712582065772" duration="1899000" />
-      <workItem from="1712587475596" duration="1464000" />
-      <workItem from="1712681650870" duration="609000" />
-      <workItem from="1713083077350" duration="1186000" />
-      <workItem from="1713167207459" duration="1778000" />
-      <workItem from="1713554806978" duration="686000" />
-      <workItem from="1713555906416" duration="129000" />
-      <workItem from="1713635702140" duration="2763000" />
-      <workItem from="1713697605680" duration="749000" />
-      <workItem from="1713718379907" duration="2421000" />
-      <workItem from="1713772198335" duration="3858000" />
-      <workItem from="1713776077882" duration="1801000" />
-      <workItem from="1713778017890" duration="67000" />
-      <workItem from="1713779733701" duration="9126000" />
-      <workItem from="1713892682747" duration="3818000" />
-      <workItem from="1713978615092" duration="504000" />
-      <workItem from="1714124773890" duration="965000" />
-      <workItem from="1714152295265" duration="2861000" />
-      <workItem from="1714236300602" duration="7334000" />
-      <workItem from="1714307223636" duration="6072000" />
-      <workItem from="1714325077028" duration="626000" />
-      <workItem from="1714392739767" duration="11712000" />
+      <updated>1714462847630</updated>
+      <workItem from="1714462848690" duration="536000" />
+      <workItem from="1714463397945" duration="1634000" />
+      <workItem from="1714465640527" duration="7099000" />
+      <workItem from="1714500468601" duration="111000" />
+      <workItem from="1714500628873" duration="15835000" />
+      <workItem from="1714554515152" duration="10532000" />
+      <workItem from="1714565512856" duration="14482000" />
+      <workItem from="1714585137140" duration="11889000" />
+      <workItem from="1714600224205" duration="256000" />
+      <workItem from="1714600496475" duration="124000" />
+      <workItem from="1714600699765" duration="77000" />
+      <workItem from="1714600877023" duration="441000" />
+      <workItem from="1714601470776" duration="257000" />
+      <workItem from="1714761723772" duration="8198000" />
     </task>
-    <task id="LOCAL-00001" summary="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working.">
-      <option name="closed" value="true" />
-      <created>1712499548427</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712499548427</updated>
-    </task>
-    <task id="LOCAL-00002" summary="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff.">
-      <option name="closed" value="true" />
-      <created>1712517511918</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1712517511918</updated>
-    </task>
-    <task id="LOCAL-00003" summary="XAMPP, Adding DB functionality&#10;&#10;CR parts of CRUD done, U and D remain to be completed.">
-      <option name="closed" value="true" />
-      <created>1713894794909</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713894794910</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Finished CRUD, Added search filter">
-      <option name="closed" value="true" />
-      <created>1714312996828</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1714312996828</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Long time no C(RUD)&#10;&#10;With some epic help, got warning popups and other goodness working." />
-    <MESSAGE value="CRUD finished&#10;&#10;Finally managed to finish up CRUD and stuff." />
-    <MESSAGE value="XAMPP, Adding DB functionality&#10;&#10;CR parts of CRUD done, U and D remain to be completed." />
-    <MESSAGE value="Finished CRUD, Added search filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished CRUD, Added search filter" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint type="java-exception">
-          <properties class="org.hibernate.HibernateException" package="org.hibernate" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="java-exception" />
-      </default-breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
