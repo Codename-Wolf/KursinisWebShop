@@ -16,10 +16,6 @@ Create a shop with different types of users connecting to it. Customers can regi
     * Statistics are provided (text + graph). For example, how much was sold during some interval, what amount, how many different orders, etc. Connect with task 8. [2] [OPTIONAL]
     * The system must consist of two subsystems: a desktop system and an online system (web server). [0.5]
 
-* Test:
-  - test 1
-    - test 2
-
 ## Usage
 
 Put this stuff onto your computer and pull up IntelliJ IDEA or whatever, have fun.
