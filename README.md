@@ -22,4 +22,4 @@ Put this stuff onto your computer and pull up IntelliJ IDEA or whatever, have fu
 
 ## Contributing
 
-I am doing all the contributing don't worry.
+No need. The work is finalized and just here for storage and review.
